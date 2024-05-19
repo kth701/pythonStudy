@@ -31,24 +31,33 @@ list1 = [10,20,30,40]
 #     print(list1[:i]) # 1~4까지 반복
 
 # 리스트 추가,삭제,수정,삽입
-print("= 리스트 추가,삭제,수정,삽입")
-print(list1)
+# print("= 리스트 추가,삭제,수정,삽입")
+# print(list1)
 
-list1.append(100) # 추가
-print(list1)
+# list1.append(100) # 추가
+# print(list1)
 
-list1[1] = 1000 # 수정
-print(list1)
+# list1[1] = 1000 # 수정
+# print(list1)
 
-list1.insert(0, "길순이") # 삽입
-print(list1)
+# list1.insert(0, "길순이") # 삽입
+# print(list1)
 
-list1.remove(100) # 삭제
-print(list1)
+# list1.remove(100) # 삭제
+# print(list1)
 
 # 리스트 연산
 x = [1,2,3,4]
 y = [1.5, 2.5]
+print(x, y)
+
+print("-- 리스트 결합")
+z = x + y
+print(z)
+
+z += [10]  #z = z + [10]
+print(z)
+
 
 
 
