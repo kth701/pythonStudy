@@ -26,6 +26,9 @@ try:
     # 파일에 있는 텍스트를 리스트 구조변환
     text_line = text.split("\n") # "\n" 문자기준으로 분리해서 리스트로 저장
     print(text_line) # list구조 : 인덱싱, 슬라이싱[1:3]
+
+    # text_line = file1.readlines() # list로 반환
+    # print(text_line)
     
     print("-- [0],[1]")
     print(text_line[0])

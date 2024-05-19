@@ -15,7 +15,7 @@ file = open("data\\text.txt", mode="r", encoding="UTF-8")
 # print(type(textLine)) # string 타입
 
 lines = file.readlines() # 전체를 줄단위 읽기
-# print(lines)
+print(lines)
 # print(type(lines)) # list 타입
 
 cnt = 1
