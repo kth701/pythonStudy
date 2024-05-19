@@ -1,6 +1,7 @@
 
 try :
     file = open("data/names_price.txt","r",encoding="UTF-8")
+
     
     text = file.read() #파일 전체 읽기
     text_lines = text.split("\n")
@@ -13,10 +14,12 @@ try :
     # print(name,price)
 
     #list구조에 있는 데이터를 한꺼번에 읽어오기
+    print(text_lines)
+    print("------")
     for list_data in text_lines:
         # print(list_data)
         name = list_data.split(",")[0]
-        price = list_data.split(",")[0]
+        price = list_data.split(",")[1]
 
         print("상품이름:{}, 상품가격:{}".format(name, price))
 
