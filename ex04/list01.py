@@ -47,17 +47,95 @@ list1 = [10,20,30,40]
 # print(list1)
 
 # 리스트 연산
-x = [1,2,3,4]
-y = [1.5, 2.5]
-print(x, y)
+# x = [1,2,3,4]
+# y = [1.5, 2.5]
+# print(x, y)
 
-print("-- 리스트 결합")
-z = x + y
-print(z)
+# print("-- 리스트 결합")
+# z = x + y
+# print(z)
 
-z += [10]  #z = z + [10]
-print(z)
+# z += [10]  #z = z + [10]
+# print(z)
 
+# 리스트 확장
+# print('-- 리스트 확장: expend()')
+# x.extend(['홍길순','동길이','김갑돌'])
+# print(x)
+
+# print('-- 리스트 추가')
+# x.append(y)
+# print(x)
+
+# print('-- 리스트 *연산')
+# x2 = x*2
+# print(x2)
+
+
+# x3 = [1,2,3,4,1,2,3,4]
+# print('-- 리스트 정렬: sort()')
+# print(x3)
+
+# x3.sort()
+# print(x3)
+
+# x3.sort(reverse=True) # 내림차순
+# print(x3)
+
+# x4 = []
+# import random
+# for i in range(10):
+#     #print(random.randint(1,10),end=" ")
+
+#     rnd = random.randint(1,10) #1-10사이 난수발생
+#     x4.append(rnd) # 발생한 난수를 리스트에 추가
+
+# print(x4)
+
+# 리스트 요소 검사
+# if 10 in x4 :
+#     print("리스트에 포함된 숫자입니다.")
+# else:
+#     print('리스트에 포함되어 있지 않는 숫자입니다.')
+    
+
+# 리스트 내포
+x5 =[2,4,1,5,8]
+print(x5)
+
+x5_result = []
+# for i in x5:
+#     #print(i**2) #2**2, 4**2, 1**2, 5**2, 8**2
+#     x5_result.append(i**2)
+
+# print(x5_result)
+
+
+# x5_result = [ i**2 for i in x5]
+# print(x5_result)
+
+
+# 짝수인 값만  2을 곱한 결과
+# for i in x5:
+#     if i%2 ==  0 :
+#         #print(i, i*2)
+#         x5_result.append(i*2)
+
+# print(x5_result)
+
+x5_result = [ i*2 for i in x5 if i%2 == 0]
+print(x5_result)
+
+#튜플 : 리스트와 유사, '()' 표현,  수정불가
+tuble_num = (10,20,30,40,50)
+print("-- 튜플")
+print(tuble_num, type(tuble_num))
+print(tuble_num[0])
+print(tuble_num[:3])
+print(tuble_num[2:])
+print(tuble_num[1:4])
+
+# tuble_num[0] = 100 # error 발생 : tuble 수정불가
 
 
 
