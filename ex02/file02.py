@@ -16,6 +16,13 @@ try:
     # 파일객체.read() : 파일 전체 읽기
     text = file1.read()
     print(text)
+    print("---------")
+    
+    # 파일에 있는 텍스트를 리스트 구조변환
+    text_line = text.split("\n") # "\n" 문자기준으로 분리해서 리스트로 저장
+    print(text_line)
+
+
 
 except Exception as e:
     # 에러 처리 하는 부분
