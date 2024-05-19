@@ -47,9 +47,10 @@ print("파일크기: {}byte".format(fsize))
 # 경로 변경
 os.chdir('./ex03')
 print('current:',os.getcwd())
+
 # 디렉토리 파일 분리하기
 print(os.path.split(os.getcwd()))
-print(os.path.split('test/hong/abc.txt'))
+
 
 
 
