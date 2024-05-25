@@ -29,4 +29,11 @@ for i in range(0, cnt-1): #반복회수 n-1
     print("{}회전 정렬후: {}".format(i+1,dataset))
 
 
+# print("-----")
+# name = "김길동"
+# age = 31
+# city = "부산001"
+
+# print("--- {}세 ---- {} ---- {}".format(age, name, city))
+
 
