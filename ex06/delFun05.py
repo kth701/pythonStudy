@@ -2,14 +2,14 @@
 # getter(): 외부에서 함수내에 있는 변수를 가져올 때
 # nonlocal: 함수내에서 외부함수에서 생성된 자료를 수정
 
-def main_func(num) :
+def main_func(num) : #외부 함수
     # 선언된 자원은 main_func함수의 자원
     num_val = num 
 
-    def getter():
+    def getter(): # 내부 함수
         return num_val
     
-    def setter(value):
+    def setter(value): #내부 함수
         # 내부함수가 외부함수 자료를 수정할 경우
         nonlocal num_val
         num_val = value
