@@ -31,7 +31,7 @@ def a(): # outer
 
     def b(): #inner
         print("b() 함수 실행")
-        
+
     print("a()함수에 b()함수를 실행")
     b()
     return b # 내부함수를 반환
@@ -43,4 +43,47 @@ def a(): # outer
 b = a()
 print("-- 메인 함수")
 b()
+
+# 함수 클로저
+print("숫자1~100 리스트에 보관1")
+# data1 = []
+# for i in range(1, 5):
+#     data1 += [i] # 숫자 => 리스트구조 전화 
+# print(data1)
+
+data = list(range(1,101))
+# print(data)
+a = 100
+# outer_func = 수행할 명령어
+def outer_func(data): # outer function
+    dataSet = data # 복사본
+    #name = "홍길동"
+
+    # tot(함수형변수) = 함수내용이 들어 있음
+    #inner function
+    def tot():
+        # print(sum([1,2]))
+        # print(max([1,2]))
+        tot_val = sum(dataSet) # sum() 내장된 함수
+        return tot_val # 결과값은 반환
+    
+    def avg(tot_val):
+        avg_val = tot_val/len(dataSet)
+        return avg_val
+    
+    return tot, avg # 함수를 반환
+
+# 함수를 가져옴
+tot, avg = outer_func(data)  
+
+tot_val = tot()
+print('tot=', tot_val)
+
+avg_val = avg(tot_val)
+print('avg=', avg_val)
+
+
+    
+
+
 
