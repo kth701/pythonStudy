@@ -86,6 +86,48 @@ Func3(1,2)
 Func3(first="홍길동", second="길순이")
 Func3(10,20,30, addr="부산",age=10)
 
+def myFun(name:str, age:int) -> int:
+    print(name, age)
+    return 100
+
+num = myFun("홍길동", 10)
+print(num)
+
+# 함수 선언 : 명시적인 함수 선언
+# 람다 함수 : 익명함수, 함수를 인자로 사용할 경우
+# 함수이름(데이터, 리스트, 튜플, 딕셔너리,...)
+
+# 일반 함수
+def Add(x,y):
+    return x + y
+
+print("-- 일반함수")
+print('add = ', Add(10,20))
+
+
+# 람다 함수
+print("-- lambda function")
+print( 'lamda add=', (lambda x,y: x+y )(100,20)   )
+
+# 변수 = 함수식(함수 본체)
+eq = lambda a,b,c : "{}x + {}y = {}".format(a,b,c)
+print(eq(5,4,3))
+
+# 일반 함수
+def eqFun(a,b,c):
+    return "{}x + {}y = {}".format(a,b,c)
+
+print(eqFun(5,4,3))
+
+print("-- 형식 있는 출력")
+# 단순(값만) 출력
+a1=100
+b1=200
+c1=300
+print(a1,b1,c1)
+# 형식을 갖춘 출력
+print("a={},b={},c={}".format(10,20,30))
+
 
 
 
