@@ -29,3 +29,20 @@ def hi():
     print("hi")
 
 hi()
+
+
+
+def func_double(f):
+    def new_func(x):
+        y = f(x) # double(x) = 2*x
+        print(y)
+        return y
+    
+    return new_func
+
+
+@func_double
+def double(x):
+    return 2*x
+
+print( double(5))
