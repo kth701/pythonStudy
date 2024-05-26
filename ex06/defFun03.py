@@ -76,6 +76,17 @@ reusult = group_by_age( kim=25, jeong=16, hong=20, sun=10)
 
 print(reusult)
 
+print("-- ")
+def Func3(*a, **b):
+    print("a = {}".format(a))
+    print("b = {}".format(b))
+
+Func3()
+Func3(1,2)
+Func3(first="홍길동", second="길순이")
+Func3(10,20,30, addr="부산",age=10)
+
+
 
 
 
