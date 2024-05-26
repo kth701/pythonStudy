@@ -30,16 +30,17 @@ c()
 def myPrn(name):
     print("이름:",name)
 
-    def myPrintInner():
+    def myPrintInner(name):
         print("myPrinInner() 함수입니다.")
         return name+"님 안녕하세요"
 
     return myPrintInner # 함수를 반환
 
 n = myPrn("홍길동") # 함수를 수행후 가져오는 값은 함수임.
-n()
+print(  n("길순이")  )
 
 # 실행 결과 
+# myPrin("홍길동") 함수를 수행한 후 아래 함수식을 가져옴.
 # def n():
 #     print("myPrinInner() 함수입니다.")
 #     return name+"님 안녕하세요"
