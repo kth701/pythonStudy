@@ -46,12 +46,14 @@ bal = acc.getBalance()
 print("계좌정보: ",bal)
 
 # 입금 처리
-acc.deposit(1000)
+money = int(input('입금금액:'))
+acc.deposit(money)
 bal = acc.getBalance()
 print("계좌정보: ",bal)
 
 # 출금 처리
-acc.withdraw(20000)
+money = int(input('출금금액:'))
+acc.withdraw(money)
 bal = acc.getBalance()
 print("계좌정보: ",bal)
 
