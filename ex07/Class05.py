@@ -26,10 +26,10 @@ air = AirPlane()
 bird = Bird()
 paper = PaperAirplane()  
 
-flight.fly()
-air.fly()
-bird.fly()
-paper.fly()
+# flight.fly()
+# air.fly()
+# bird.fly()
+# paper.fly()
 
 flight = air
 flight.fly()
