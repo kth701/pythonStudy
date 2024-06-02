@@ -7,7 +7,7 @@ from re import findall, sub
 
 # 텍스트
 texts = [
-    '우리나라 대한민구, 우리나라%$ 만세',
+    '우리나라 대한민국, 우리나라%$ 만세',
     '비아그&라 500GRAM 최고!',
     '나는 대한민국 사람',
     '보험료 15000원에 평생 보장 마감 임박',
@@ -45,5 +45,7 @@ text_re5 = [ ''.join(findall('[^a-z]',text))  for text in text_re4]
 print("5. 영문자 제거")
 print(text_re5)
 
-
-# 6. 공백제거
+# 6. 공백제거 : 공백기준  splite -> join결합
+text_re6 = [ ' '.join(text.split()) for text in text_re5 ]
+print("6. 공백 제거")
+print( text_re6)
